@@ -9,23 +9,10 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 endif
 
 
-if SHIELD_CATOSTYL_LEFT
-
-config ZMK_BLE
-    default y
-
-endif
-
-
-if SHIELD_CATOSTYL_RIGHT
-
-config ZMK_BLE
-    default y
-
-endif
-
-
 if SHIELD_CATOSTYL_CENTER || SHIELD_CATOSTYL_LEFT || SHIELD_CATOSTYL_RIGHT
+
+config ZMK_BLE
+    default y
 
 config ZMK_USB
     default y
