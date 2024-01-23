@@ -11,9 +11,6 @@ endif
 
 if SHIELD_CATOSTYL_LEFT
 
-config ZMK_KEYBOARD_NAME
-    default "Catostyl L"
-
 config ZMK_BLE
     default y
 
@@ -21,9 +18,6 @@ endif
 
 
 if SHIELD_CATOSTYL_RIGHT
-
-config ZMK_KEYBOARD_NAME
-    default "Catostyl R"
 
 config ZMK_BLE
     default y
