@@ -6,6 +6,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
+
 endif
 
 
@@ -36,9 +39,6 @@ endif
 if SHIELD_CATOSTYL_CENTER || SHIELD_CATOSTYL_LEFT || SHIELD_CATOSTYL_RIGHT
 
 config ZMK_SPLIT
-    default y
-
-config ZMK_USB
     default y
 
 config ZMK_BLE
