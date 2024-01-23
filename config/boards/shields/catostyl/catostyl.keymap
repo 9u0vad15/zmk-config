@@ -20,30 +20,6 @@
             key-positions = <1 2>;
             timeout-ms = <80>;
         };
-
-        cb_tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-            timeout-ms = <80>;
-        };
-
-        cb_caps {
-            bindings = <&kp CAPS>;
-            key-positions = <20 21>;
-            timeout-ms = <80>;
-        };
-
-        cb_bspc {
-            bindings = <&kp BSPC>;
-            key-positions = <18 19>;
-            timeout-ms = <80>;
-        };
-
-        cb_del {
-            bindings = <&kp DEL>;
-            key-positions = <16 17>;
-            timeout-ms = <80>;
-        };
     };
 
     keymap {

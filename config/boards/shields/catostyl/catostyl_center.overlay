@@ -1,0 +1,5 @@
+#include "catostyl.dtsi"
+
+&kscan0 {
+    input-gpios = <&pro_micro 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+};
