@@ -17,9 +17,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_BLE
     default y
 
-config ZMK_BATTERY_VOLTAGE_DIVIDER
-    default y
-
 endif
 
 
@@ -29,9 +26,6 @@ config ZMK_KEYBOARD_NAME
     default "Catostyl R"
 
 config ZMK_BLE
-    default y
-
-config ZMK_BATTERY_VOLTAGE_DIVIDER
     default y
 
 endif
@@ -46,3 +40,4 @@ config ZMK_SPLIT
     default y
 
 endif
+
