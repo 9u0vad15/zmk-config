@@ -1,7 +1,7 @@
 config ZMK_USB
     default y
 
-config ZMK_BLE
+config ZMK_SPLIT
     default y
 
 
@@ -14,27 +14,28 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
 config ZMK_BATTERY_VOLTAGE_DIVIDER
-	default y
+    default y
 
 endif
+
 
 if SHIELD_CATOSTYL_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Catostyl L"
+    default "Catostyl L"
+
+config ZMK_BLE
+    default y
 
 endif
+
 
 if SHIELD_CATOSTYL_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Catostyl R"
+    default "Catostyl R"
 
-endif
-
-if SHIELD_CATOSTYL_CENTER || SHIELD_CATOSTYL_LEFT || SHIELD_CATOSTYL_RIGHT
-
-config ZMK_SPLIT
+config ZMK_BLE
     default y
 
 endif
