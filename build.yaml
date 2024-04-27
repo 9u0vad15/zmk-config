@@ -14,8 +14,10 @@
 ---
 include:
     - board: nice_nano_v2
-      shield: batmobile_left
+      shield: catostyl_center
     - board: nice_nano_v2
-      shield: batmobile_right
+      shield: catostyl_left
+    - board: nice_nano_v2
+      shield: catostyl_right
     - board: nice_nano_v2
       shield: settings_reset
