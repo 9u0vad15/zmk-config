@@ -33,12 +33,6 @@
             timeout-ms = <50>;
         };
 
-        cb_bspc {
-            bindings = <&kp BSPC>;
-            key-positions = <18 19>;
-            timeout-ms = <50>;
-        };
-
         cb_del {
             bindings = <&kp DEL>;
             key-positions = <16 17>;
@@ -51,28 +45,28 @@
 
         default {
             bindings = <
-&kp Q      &kp W  &kp E       &kp R       &kp T               &kp Y        &kp U       &kp I      &kp O    &kp P
-&kp A      &kp S  &kp D       &mt LALT F  &mt LCTRL G         &mt RCTRL H  &mt RALT J  &kp K      &kp L    &kp SEMI
-&lt NUM Z  &kp X  &kp C       &kp V       &kp B               &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH
-                  &kp LSHIFT  &kp SPACE   &kp LEFT_COMMAND    &mo NAV      &kp ENTER   &kp APOS
+&kp Q        &kp W  &kp E        &kp R        &kp T       &kp Y       &kp U        &kp I        &kp O    &kp P
+&kp A        &kp S  &mt LCTRL D  &mt LSHFT F  &mt LALT G  &mt RALT H  &mt RSHFT J  &mt RCTRL K  &kp L    &kp SEMI
+&mt LC(Z) Z  &kp X  &kp C        &lt 2 V      &kp B       &kp N       &lt 2 M      &kp COMMA    &kp DOT  &kp FSLH
+                    &kp LCMD     &kp SPACE    &lt 1 TAB   &kp BSPC    &kp ENTER    &kp APOS
             >;
         };
 
         numbers {
             bindings = <
-&kp N1  &kp N2     &kp N3     &kp N4    &kp N5      &kp KP_MULTIPLY  &kp N7   &kp N8  &kp N9  &kp PLUS
-&kp N6  &kp N7     &kp N8     &kp N9    &kp N0      &kp KP_DIVIDE    &kp N4   &kp N5  &kp N6  &kp MINUS
-&trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT    &none            &kp N1   &kp N2  &kp N3  &none
-                   &trans     &trans    &trans      &kp EQUAL        &kp DOT  &kp N0
+&kp N1  &kp N2     &kp N3     &kp N4    &kp N5    &kp KP_MULTIPLY  &kp N7   &kp N8  &kp N9  &kp PLUS
+&kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp KP_DIVIDE    &kp N4   &kp N5  &kp N6  &kp MINUS
+&trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none            &kp N1   &kp N2  &kp N3  &none
+                   &trans     &trans    &trans    &kp EQUAL        &kp DOT  &kp N0
             >;
         };
 
         navigation {
             bindings = <
-&kp F1      &kp F2      &kp F3      &kp F4        &kp F5              &kp HOME   &kp END   &kp UP    &kp PG_UP  &kp PG_DN
-&kp F6      &kp F7      &kp F8      &kp F9        &kp F10             &none      &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1        &none      &none     &none     &none      &none
-                        &kp LSHIFT  &kp SPACE     &kp LEFT_COMMAND    &kp ENTER  &none     &none
+&kp F1      &kp F2      &kp F3      &kp F4        &kp F5            &kp HOME   &kp END   &kp UP    &kp PG_UP  &kp PG_DN
+&kp F6      &kp F7      &kp F8      &kp F9        &kp F10           &none      &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1      &none      &none     &none     &none      &none
+                        &kp LSHIFT  &kp SPACE     &kp LEFT_COMMAND  &kp ENTER  &none     &none
             >;
         };
     };
