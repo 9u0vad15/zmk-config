@@ -21,12 +21,6 @@
             timeout-ms = <50>;
         };
 
-        cb_tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-            timeout-ms = <50>;
-        };
-
         cb_caps {
             bindings = <&kp CAPS>;
             key-positions = <20 21>;
