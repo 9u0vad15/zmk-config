@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
@@ -15,12 +14,6 @@
     combos {
         compatible = "zmk,combos";
 
-        cb_esc {
-            bindings = <&kp ESC>;
-            key-positions = <1 2>;
-            timeout-ms = <50>;
-        };
-
         cb_caps {
             bindings = <&kp CAPS>;
             key-positions = <20 21>;
@@ -34,33 +27,42 @@
         };
     };
 
+    behaviors {
+        td_slh: td_slh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SLH";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default {
             bindings = <
 &kp Q        &kp W  &kp E        &kp R        &kp T       &kp Y       &kp U        &kp I        &kp O    &kp P
-&kp A        &kp S  &mt LCTRL D  &mt LSHFT F  &mt LALT G  &mt RALT H  &mt RSHFT J  &mt RCTRL K  &kp L    &kp SEMI
-&mt LC(Z) Z  &kp X  &kp C        &lt 2 V      &kp B       &kp N       &lt 2 M      &kp COMMA    &kp DOT  &kp FSLH
-                    &kp LCMD     &kp SPACE    &lt 1 TAB   &kp BSPC    &kp ENTER    &kp APOS
+&mt LCMD A   &kp S  &mt LCTRL D  &mt LSHFT F  &mt LALT G  &mt RALT H  &mt RSHFT J  &mt RCTRL K  &kp L    &mt RCMD SEMI
+&mt LC(Z) Z  &kp X  &kp C        &lt 2 V      &kp B       &kp N       &lt 2 M      &kp COMMA    &kp DOT  &td_slh
+                    &kp ESC      &kp SPACE    &lt 1 TAB   &kp BSPC    &kp ENTER    &kp APOS
             >;
         };
 
         numbers {
             bindings = <
-&kp N1  &kp N2     &kp N3     &kp N4    &kp N5    &kp KP_MULTIPLY  &kp N7   &kp N8  &kp N9  &kp PLUS
-&kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp KP_DIVIDE    &kp N4   &kp N5  &kp N6  &kp MINUS
-&trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none            &kp N1   &kp N2  &kp N3  &none
-                   &trans     &trans    &trans    &kp EQUAL        &kp DOT  &kp N0
+&kp N1     &kp N2     &kp N3     &kp N4    &kp N5    &kp KP_MULTIPLY  &kp N7   &kp N8  &kp N9  &kp PLUS
+&kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp KP_DIVIDE    &kp N4   &kp N5  &kp N6  &kp MINUS
+&kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none            &kp N1   &kp N2  &kp N3  &kp EQUAL
+                      &trans     &trans    &trans    &none            &kp DOT  &kp N0
             >;
         };
 
         navigation {
             bindings = <
-&kp F1      &kp F2      &kp F3      &kp F4        &kp F5            &kp HOME   &kp END   &kp UP    &kp PG_UP  &kp PG_DN
-&kp F6      &kp F7      &kp F8      &kp F9        &kp F10           &none      &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1      &none      &none     &none     &none      &none
-                        &kp LSHIFT  &kp SPACE     &kp LEFT_COMMAND  &kp ENTER  &none     &none
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &none  &kp HOME   &kp UP    &kp END    &none
+&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none  &kp LEFT   &kp DOWN  &kp RIGHT  &none
+&none   &none   &none   &none   &none    &none  &kp PG_UP  &none     &kp PG_DN  &none
+                &none   &none   &none    &none  &none      &none
             >;
         };
     };
