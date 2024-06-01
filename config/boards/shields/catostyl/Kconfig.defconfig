@@ -15,7 +15,7 @@ endif
 if SHIELD_CATOSTYL_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Catostyl L"
+    default "Catostyl L Peripheral"
 
 endif
 
@@ -23,7 +23,7 @@ endif
 if SHIELD_CATOSTYL_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Catostyl R"
+    default "Catostyl R Peripheral"
 
 endif
 
