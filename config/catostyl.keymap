@@ -34,6 +34,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <16 17>;
         };
+
+        cb_to_nav {
+            bindings = <&tog 2>;
+            key-positions = <32 33>;
+        };
     };
 
     behaviors {
