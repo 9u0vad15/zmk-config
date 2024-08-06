@@ -2,21 +2,17 @@
 
 / {
     chosen {
-        zmk,kscan = &mock_kscan;
-        zmk,matrix-transform = &default_transform;
         zephyr,display = &oled;
     };
+};
 
-    mock_kscan: kscan_0 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
-    };
+&kscan0 {
+    input-gpios = <&pro_micro 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
 };
 
 &pro_micro_i2c {
     status = "okay";
+
     oled: sh1106@3c {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
