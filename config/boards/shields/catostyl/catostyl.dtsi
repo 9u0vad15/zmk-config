@@ -22,13 +22,9 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-direct";
-    };
 
-    mock_kscan: kscan_0 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
+        input-gpios
+            = <&pro_micro  0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>
     };
 
     vbatt: vbatt {
