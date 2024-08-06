@@ -7,7 +7,10 @@
 };
 
 &kscan0 {
-    input-gpios = <&pro_micro 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+    compatible = "zmk,kscan-mock";
+    columns = <0>;
+    rows = <0>;
+    events = <0>;
 };
 
 &pro_micro_i2c {
@@ -27,4 +30,4 @@
         inversion-on;
         prechargep = <0x22>;
         };
-}; 
+};
