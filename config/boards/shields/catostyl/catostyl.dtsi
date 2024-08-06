@@ -24,6 +24,13 @@
         compatible = "zmk,kscan-gpio-direct";
     };
 
+    mock_kscan: kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
         io-channels = <&adc 2>;
