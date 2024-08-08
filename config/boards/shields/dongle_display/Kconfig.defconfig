@@ -11,9 +11,9 @@ config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
     select LV_USE_LABEL
     select LV_USE_IMG
     select LV_USE_CANVAS
-    select LV_USE_ANIMIMG 
+    select LV_USE_ANIMIMG
     select LV_USE_ANIMATION
-    select LV_USE_LINE 
+    select LV_USE_LINE
     select LV_FONT_UNSCII_8
     select ZMK_WPM
     imply ZMK_HID_INDICATORS
@@ -36,7 +36,7 @@ config LV_Z_VDB_SIZE
     default 64
 
 config LV_DPI_DEF
-    default 148
+    default 128
 
 config LV_Z_BITS_PER_PIXEL
     default 1
