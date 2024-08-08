@@ -15,7 +15,6 @@
 include:
     - board: nice_nano_v2
       shield: catostyl_center dongle_display
-      artifact-name: catostyl_center
     - board: nice_nano_v2
       shield: catostyl_left
     - board: nice_nano_v2
