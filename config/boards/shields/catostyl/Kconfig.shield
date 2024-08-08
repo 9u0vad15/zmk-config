@@ -1,5 +1,5 @@
-config SHIELD_CATOSTYL_CENTER
-    def_bool $(shields_list_contains,catostyl_center)
+config SHIELD_CATOSTYL_DONGLE
+    def_bool $(shields_list_contains,catostyl_dongle)
 
 config SHIELD_CATOSTYL_LEFT
     def_bool $(shields_list_contains,catostyl_left)

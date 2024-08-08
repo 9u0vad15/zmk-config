@@ -7,6 +7,6 @@ requires: [nice_nano_v2]
 features:
     - keys
 siblings:
-    - catostyl_center
+    - catostyl_dongle
     - catostyl_left
     - catostyl_right

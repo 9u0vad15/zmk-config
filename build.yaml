@@ -14,7 +14,7 @@
 ---
 include:
     - board: nice_nano_v2
-      shield: catostyl_center dongle_display
+      shield: catostyl_dongle dongle_display
     - board: nice_nano_v2
       shield: catostyl_left
     - board: nice_nano_v2
