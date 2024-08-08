@@ -20,10 +20,6 @@
         >;
     };
 
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-direct";
-    };
-
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
         io-channels = <&adc 2>;
