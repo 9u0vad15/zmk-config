@@ -15,6 +15,6 @@ manifest:
         - name: zmk-dongle-display
           # remote: 9u0vad15
           remote: englmaxi
-          revision: master
+          revision: main
     self:
         path: config
