@@ -1,16 +1,7 @@
 on: [push, pull_request, workflow_dispatch]
-# name: Build ZMK firmware
-# on:
-#   workflow_dispatch:
-#   pull_request:
-#   push:
-#     paths:
-#       - "config/keymap/**"
-#       - "config/*.conf"
-#       - "config/*.keymap"
-#       - "boards/**"
-#       - "build.yaml"
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      token: ${{secrets.ZMK_BUILD_SECRETS}}
