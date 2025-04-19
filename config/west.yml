@@ -4,8 +4,6 @@ manifest:
           url-base: https://github.com/zmkfirmware
         - name: 9u0vad15
           url-base: https://github.com/9u0vad15
-        # - name: englmaxi
-        #   url-base: https://github.com/englmaxi
     projects:
         - name: zmk
           remote: zmkfirmware
@@ -14,7 +12,6 @@ manifest:
         # modules
         - name: zmk-dongle-display
           remote: 9u0vad15
-          # remote: englmaxi
           revision: main
     self:
         path: config

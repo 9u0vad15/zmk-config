@@ -28,7 +28,7 @@ config LV_Z_VDB_SIZE
     default 64
 
 config LV_DPI_DEF
-    default 128
+    default 150
 
 config LV_Z_BITS_PER_PIXEL
     default 1
@@ -39,22 +39,6 @@ endchoice
 
 endif # LVGL
 
-
-endif
-
-
-if SHIELD_CATOSTYL_LEFT
-
-config ZMK_KEYBOARD_NAME
-    default "Catostyl L Peripheral"
-
-endif
-
-
-if SHIELD_CATOSTYL_RIGHT
-
-config ZMK_KEYBOARD_NAME
-    default "Catostyl R Peripheral"
 
 endif
 
