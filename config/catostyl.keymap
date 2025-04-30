@@ -12,6 +12,17 @@
 };
 
 / {
+    behaviors {
+        mse: mouse_emulator {
+            compatible = "zmk,input-processor-mouse-emu";
+            #binding-cells = <1>;
+        };
+    };
+    
+    pim447_listener {
+        input-processors = <&mse>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
