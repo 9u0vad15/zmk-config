@@ -44,3 +44,5 @@
 };
 
 &pim447_listener { status = "okay"; };
+
+&trackball { status = "okay"; };
