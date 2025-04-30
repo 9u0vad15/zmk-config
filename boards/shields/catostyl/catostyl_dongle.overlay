@@ -29,4 +29,10 @@
         inversion-on;
         prechargep = <0x22>;
     };
+
+    pim447@a {
+        compatible = "pimoroni,pim447";
+        reg = <0x0a>;
+        int-gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;
+    };
 };

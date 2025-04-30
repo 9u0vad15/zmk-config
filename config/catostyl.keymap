@@ -35,18 +35,14 @@
             key-positions = <16 17>;
         };
 
+        cb_backslash {
+            bindings = <&kp BSLH>;
+            key-positions = <29 30>;
+        };
+
         cb_to_nav {
             bindings = <&tog 2>;
             key-positions = <32 33>;
-        };
-    };
-
-    behaviors {
-        td_slh: td_slh {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SLH";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
         };
     };
 
@@ -57,7 +53,7 @@
             bindings = <
 &mt N1 Q    &mt N2 W     &mt N3 E     &mt N4 R     &mt N5 T       &mt N6 Y    &mt N7 U     &mt N8 I        &mt N9 O      &mt N0 P
 &mt LCMD A  &mt LSHFT S  &mt LCTRL D  &mt LSHFT F  &mt LALT G     &mt RALT H  &mt RSHFT J  &mt RCTRL K     &mt RSHFT L   &mt RCMD SEMI
-&kp Z       &kp X        &mt LC(C) C  &mt LC(V) V  &kp B          &kp N       &kp M        &mt LBKT COMMA  &mt RBKT DOT  &td_slh
+&kp Z       &kp X        &mt LC(C) C  &mt LC(V) V  &kp B          &kp N       &kp M        &mt LBKT COMMA  &mt RBKT DOT  &kp FSLH
                          &kp ESC      &lt NAV TAB  &lt NUM SPACE  &kp BSPC    &lt NAV RET  &kp DEL
             >;
         };
