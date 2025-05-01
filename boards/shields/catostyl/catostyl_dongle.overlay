@@ -14,12 +14,14 @@
 };
 
 &pro_micro_i2c {
+    #address-cells = <1>;
+    #size-cells = <0>;
+    status = "okay";
     clock-frequency = <100000>;
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
-        status = "okay";
         width = <128>;
         height = <64>;
         segment-offset = <0>;
