@@ -22,7 +22,7 @@
     mouse_layer_1 {
         layers = <1>;
         input-processors = <&zip_xy_to_scroll_mapper>;
-        process-next = "false";
+        process-next = false;
     };
 };
 
