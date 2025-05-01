@@ -37,7 +37,7 @@
 
     pim447: pim447@0a {
         compatible = "pimoroni,pim447";
-        reg = <0x0a 0x0b>;
+        reg = <0x0a>;
         status = "okay";
         int-gpios = <&pro_micro 21 (GPIO_ACTIVE_LOW)>;
     };
