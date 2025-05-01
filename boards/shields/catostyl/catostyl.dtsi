@@ -1,10 +1,16 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/input_transform.h>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
         zmk,battery = &vbatt;
+    };
+
+    pim447_listener: pim447_listener {
+        compatible = "zmk,input-listener";
+        device = <&pim447>;
     };
 
     default_transform: keymap_transform_0 {

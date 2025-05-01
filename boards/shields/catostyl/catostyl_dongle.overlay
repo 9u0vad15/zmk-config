@@ -1,14 +1,8 @@
 #include "catostyl.dtsi"
-#include <dt-bindings/zmk/input_transform.h>
 
 / {
     chosen {
         zephyr,display = &oled;
-    };
-
-    pim447_listener: pim447_listener {
-        compatible = "zmk,input-listener";
-        device = <&pim447>;
     };
 };
 
