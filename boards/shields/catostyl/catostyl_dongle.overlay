@@ -22,6 +22,7 @@
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
+        status = "okay";
         width = <128>;
         height = <64>;
         segment-offset = <0>;
@@ -37,6 +38,7 @@
     pim447: pim447@0a {
         compatible = "pimoroni,pim447";
         reg = <0x0a 0x0b>;
+        status = "okay";
         int-gpios = <&pro_micro 21 (GPIO_ACTIVE_LOW)>;
     };
 };
