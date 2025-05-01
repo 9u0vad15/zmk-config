@@ -1,4 +1,5 @@
 #include "catostyl.dtsi"
+#include <dt-bindings/zmk/input_transforms.h>
 
 / {
     chosen {
@@ -7,8 +8,7 @@
 
     pim447_listener: pim447_listener {
         compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&trackball>;
+        device = <&pim447>;
     };
 };
 
@@ -20,10 +20,12 @@
 };
 
 &pro_micro_i2c {
-    status = "okay";
+    clock-frequency = <100000>;
+
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
+        status = "okay";
         width = <128>;
         height = <64>;
         segment-offset = <0>;
@@ -36,13 +38,10 @@
         prechargep = <0x22>;
     };
 
-    trackball: pim447@a {
+    pim447: pim447@0a {
         compatible = "pimoroni,pim447";
         reg = <0x0a>;
-        int-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        status = "okay";
+        int-gpios = <&pro_micro 21 (GPIO_ACTIVE_LOW)>;
     };
 };
-
-&pim447_listener { status = "okay"; };
-
-&trackball { status = "okay"; };

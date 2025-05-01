@@ -2,7 +2,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
+// Layer aliases
 #define DEF 0
 #define NUM 1
 #define NAV 2
@@ -12,18 +14,19 @@
     flavor = "tap-preferred";
 };
 
-/ {
-    behaviors {
-        mse: mouse_emulator {
-            compatible = "zmk,input-processor-mouse-emu";
-            #binding-cells = <1>;
-        };
-    };
-    
-    pim447_listener {
-        input-processors = <&mse>;
-    };
+&pim447_listener {
+    input-processors = <&zip_xy_scaler 2 1>;
 
+    /* input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>; */
+
+    mouse_layer_1 {
+        layers = <1>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+        process-next = "false";
+    };
+};
+
+/ {
     combos {
         compatible = "zmk,combos";
 
