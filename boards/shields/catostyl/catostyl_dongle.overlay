@@ -31,11 +31,4 @@
         inversion-on;
         prechargep = <0x22>;
     };
-
-    pim447: pim447@0a {
-        compatible = "pimoroni,pim447";
-        reg = <0x0a>;
-        status = "okay";
-        int-gpios = <&pro_micro 21 (GPIO_ACTIVE_LOW)>;
-    };
 };

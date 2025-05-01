@@ -8,6 +8,13 @@
         zmk,battery = &vbatt;
     };
 
+    pim447: pim447@0a {
+        compatible = "pimoroni,pim447";
+        reg = <0x0a>;
+        status = "okay";
+        int-gpios = <&pro_micro 21 (GPIO_ACTIVE_LOW)>;
+    };
+
     pim447_listener: pim447_listener {
         compatible = "zmk,input-listener";
         device = <&pim447>;
