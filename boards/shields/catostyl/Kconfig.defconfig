@@ -9,6 +9,9 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_POINTING
     default y
 
+config ZMK_PIMORONI_PIM447
+    default y
+
 
 if ZMK_DISPLAY
 
