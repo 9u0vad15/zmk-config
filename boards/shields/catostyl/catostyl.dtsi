@@ -8,8 +8,6 @@
         zmk,battery = &vbatt;
     };
 
-    pim447_listener: pim447_listener {};
-
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <36>;
