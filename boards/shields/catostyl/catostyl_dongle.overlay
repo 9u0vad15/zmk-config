@@ -26,6 +26,7 @@
     // I2C_BITRATE_ULTRA   5000000
 
     pim447: pim447@a {
+        label = "PIM447";
         compatible = "zmk,pimoroni-pim447";
         status = "okay";
         reg = <0x0a>;
