@@ -18,6 +18,7 @@
     behaviors {
         tb_pim447: tt {
             compatible = "zmk,behavior-pim447";
+            #binding-cells = <1>;
         };
     };
 
