@@ -44,7 +44,7 @@
 
     pim447: pim447@a {
         compatible = "zmk,behavior-pim447";
-        #binding-cells = <1>;
+        #binding-cells = <0>;
         status = "okay";
         reg = <0x0a>;
         interrupt-gpios = <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
