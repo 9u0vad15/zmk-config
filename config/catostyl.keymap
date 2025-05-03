@@ -15,6 +15,12 @@
 };
 
 / {
+    behaviors {
+        tb_pim447: tt {
+            compatible = "zmk,behavior-pim447"
+        }
+    }
+
     combos {
         compatible = "zmk,combos";
 
