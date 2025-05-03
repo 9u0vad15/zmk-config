@@ -6,6 +6,7 @@ url: https://github.com/9u0vad15/zmk-config
 requires: [nice_nano_v2]
 features:
     - keys
+    - pointer
 siblings:
     - catostyl_dongle
     - catostyl_left
