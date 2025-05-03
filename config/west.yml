@@ -4,8 +4,6 @@ manifest:
           url-base: https://github.com/zmkfirmware
         - name: 9u0vad15
           url-base: https://github.com/9u0vad15
-        - name: t0bybr
-          url-base: https://github.com/t0bybr
     projects:
         - name: zmk
           remote: zmkfirmware
@@ -16,7 +14,7 @@ manifest:
           remote: 9u0vad15
           revision: main
         - name: pim447
-          remote: t0bybr
+          remote: 9u0vad15
           revision: main
     self:
         path: config
