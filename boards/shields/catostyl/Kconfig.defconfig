@@ -12,6 +12,9 @@ config ZMK_POINTING
 config ZMK_PIMORONI_PIM447
     default y
 
+config I2C
+    default y
+
 
 if ZMK_DISPLAY
 

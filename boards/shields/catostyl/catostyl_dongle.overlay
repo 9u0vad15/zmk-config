@@ -1,10 +1,10 @@
 #include "catostyl.dtsi"
 
-/ {
-    chosen {
-        zephyr,display = &oled;
-    };
-};
+// / {
+//     chosen {
+//         zephyr,display = &oled;
+//     };
+// };
 
 &kscan0 {
     compatible = "zmk,kscan-mock";
@@ -25,29 +25,29 @@
     // I2C_BITRATE_HIGH   3400000
     // I2C_BITRATE_ULTRA   5000000
 
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        status = "okay";
-        reg = <0x3c>;
-        width = <128>;
-        height = <64>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <63>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        inversion-on;
-        prechargep = <0x22>;
-    };
-
     pim447: pim447@a {
         compatible = "zmk,pimoroni-pim447";
         status = "okay";
         reg = <0x0a>;
         int-gpios = <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
+
+    // oled: ssd1306@3c {
+    //     compatible = "solomon,ssd1306fb";
+    //     // status = "okay";
+    //     reg = <0x3c>;
+    //     width = <128>;
+    //     height = <64>;
+    //     segment-offset = <0>;
+    //     page-offset = <0>;
+    //     display-offset = <0>;
+    //     multiplex-ratio = <63>;
+    //     segment-remap;
+    //     com-invdir;
+    //     com-sequential;
+    //     inversion-on;
+    //     prechargep = <0x22>;
+    // };
 };
 
 &pim447_listener {
