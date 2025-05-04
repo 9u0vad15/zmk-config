@@ -3,7 +3,7 @@ include:
     # - board: nice_nano_v2
     #   shield: catostyl_dongle dongle_display
     - board: nice_nano_v2
-      shield: catostyl_dongle
+      shield: catostyl_dongle pimoroni_pim447
     - board: nice_nano_v2
       shield: catostyl_left
     - board: nice_nano_v2
