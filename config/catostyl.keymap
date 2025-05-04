@@ -59,11 +59,6 @@
             bindings = <&tog 2>;
             key-positions = <32 33>;
         };
-
-        cb_caps {
-            bindings = <&kp CAPS>;
-            key-positions = <20 21>;
-        };
     };
 
     keymap {
