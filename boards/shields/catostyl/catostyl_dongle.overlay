@@ -24,7 +24,7 @@
     // #size-cells = <0>;
 
     status = "okay";
-    clock-frequency = <I2C_BITRATE_STANDARD>;
+    clock-frequency = <I2C_BITRATE_HIGH>;
     // I2C_BITRATE_STANDARD   100000
     // I2C_BITRATE_FAST   400000
     // I2C_BITRATE_FAST_PLUS   1000000
@@ -41,7 +41,6 @@
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
-        status = "okay";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
