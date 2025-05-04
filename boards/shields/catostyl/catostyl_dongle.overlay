@@ -20,8 +20,8 @@
 };
 
 &pro_micro_i2c {
-    #address-cells = <1>;
-    #size-cells = <0>;
+    // #address-cells = <1>;
+    // #size-cells = <0>;
 
     status = "okay";
     clock-frequency = <I2C_BITRATE_STANDARD>;
