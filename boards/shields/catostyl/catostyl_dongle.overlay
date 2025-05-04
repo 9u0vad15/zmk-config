@@ -8,7 +8,7 @@
     pim447_listener: pim447_listener {
         compatible = "zmk,input-listener";
         status = "okay";
-        device = <&pim447>;
+        device = &pim447;
     };
 };
 
