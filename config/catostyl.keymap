@@ -1,10 +1,10 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 // Layer aliases
+
 #define DEF 0
 #define NUM 1
 #define NAV 2
@@ -52,12 +52,21 @@
 
         cb_backslash {
             bindings = <&kp BSLH>;
+<<<<<<< HEAD
             key-positions = <28 29>;
+=======
+            key-positions = <29 28>;
+>>>>>>> 6e1974d3d7f41e2a7e73db136237b6dd3e0cff71
         };
 
         cb_to_nav {
             bindings = <&tog 2>;
             key-positions = <32 33>;
+        };
+
+        cb_caps {
+            bindings = <&kp CAPS>;
+            key-positions = <20 21>;
         };
     };
 
