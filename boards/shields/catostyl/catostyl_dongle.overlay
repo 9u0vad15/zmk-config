@@ -36,6 +36,30 @@
         automouse-layer = <2>;
     };
 
+    // oled: ssd1306@3c {
+    //     compatible = "solomon,ssd1306fb";
+    //     reg = <0x3c>;
+    //     width = <128>;
+    //     height = <64>;
+    //     segment-offset = <0>;
+    //     page-offset = <0>;
+    //     display-offset = <0>;
+    //     multiplex-ratio = <63>;
+    //     segment-remap;
+    //     com-invdir;
+    //     // com-sequential;
+    //     inversion-on;
+    //     prechargep = <0x22>;
+    // };
+};
+
+&i2c1 {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+
+    pinctrl-0 = <&i2c1_default>;
+    pinctrl-names = "default";
+
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
@@ -52,12 +76,3 @@
         prechargep = <0x22>;
     };
 };
-
-// &i2c1 {
-//     status = "okay";
-//     clock-frequency = <I2C_BITRATE_FAST>;
-
-//     pinctrl-0 = <&i2c1_default>;
-//     pinctrl-names = "default";
-    
-// };
