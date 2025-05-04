@@ -13,7 +13,7 @@ manifest:
         - name: zmk-dongle-display
           remote: 9u0vad15
           revision: main
-        - name: pim447
+        - name: zmk-pim447
           remote: 9u0vad15
           revision: main
     self:
