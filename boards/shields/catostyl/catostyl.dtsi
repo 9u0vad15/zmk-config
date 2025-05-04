@@ -21,12 +21,7 @@
         >;
     };
 
-    kscan0: kscan {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
-    };
+    kscan0: kscan {};
 
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
