@@ -12,6 +12,9 @@ if ZMK_PIMORONI_PIM447
 config I2C
     default y
 
+config GPIO
+    default y
+
 config ZMK_POINTING
     default y
 
