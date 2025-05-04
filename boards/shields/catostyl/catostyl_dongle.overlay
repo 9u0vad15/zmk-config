@@ -1,10 +1,16 @@
 #include "catostyl.dtsi"
 
-// / {
-//     chosen {
-//         zephyr,display = &oled;
-//     };
-// };
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
+
+    pim447_listener: pim447_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&pim447>;
+    };
+};
 
 &kscan0 {
     compatible = "zmk,kscan-mock";
@@ -50,7 +56,7 @@
     // };
 };
 
-&pim447_listener {
-    status = "okay";
-    device = <&pim447>;
-};
+// &pim447_listener {
+//     status = "okay";
+//     device = <&pim447>;
+// };
