@@ -52,11 +52,7 @@
 
         cb_backslash {
             bindings = <&kp BSLH>;
-<<<<<<< HEAD
             key-positions = <28 29>;
-=======
-            key-positions = <29 28>;
->>>>>>> 6e1974d3d7f41e2a7e73db136237b6dd3e0cff71
         };
 
         cb_to_nav {
