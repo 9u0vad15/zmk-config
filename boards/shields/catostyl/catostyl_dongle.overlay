@@ -1,9 +1,9 @@
 #include "catostyl.dtsi"
 
 / {
-    // chosen {
-    //     zephyr,display = &oled;
-    // };
+    chosen {
+        zephyr,display = &oled;
+    };
 
     pim447_listener: pim447_listener {
         compatible = "zmk,input-listener";
@@ -24,7 +24,7 @@
     // #size-cells = <0>;
 
     status = "okay";
-    clock-frequency = <I2C_BITRATE_FAST>;
+    clock-frequency = <I2C_BITRATE_FAST_PLUS>;
     // I2C_BITRATE_STANDARD   100000
     // I2C_BITRATE_FAST   400000
     // I2C_BITRATE_FAST_PLUS   1000000
@@ -39,25 +39,20 @@
         automouse-layer = <2>;
     };
 
-    // oled: ssd1306@3c {
-    //     compatible = "solomon,ssd1306fb";
-    //     // status = "okay";
-    //     reg = <0x3c>;
-    //     width = <128>;
-    //     height = <64>;
-    //     segment-offset = <0>;
-    //     page-offset = <0>;
-    //     display-offset = <0>;
-    //     multiplex-ratio = <63>;
-    //     segment-remap;
-    //     com-invdir;
-    //     com-sequential;
-    //     inversion-on;
-    //     prechargep = <0x22>;
-    // };
+    oled: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        // status = "okay";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <63>;
+        segment-remap;
+        com-invdir;
+        com-sequential;
+        inversion-on;
+        prechargep = <0x22>;
+    };
 };
-
-// &pim447_listener {
-//     status = "okay";
-//     device = <&pim447>;
-// };
