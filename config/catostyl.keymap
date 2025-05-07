@@ -10,17 +10,17 @@
 #define NAV 2
 
 &mt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <180>;
     flavor = "tap-preferred";
 };
 
 / {
-    behaviors {
-        tb_pim447: trackball_pimoroni_pim447 {
-            compatible = "zmk,behavior-pim447";
-            #binding-cells = <1>;
-        };
-    };
+//    behaviors {
+//        tb_pim447: trackball_pimoroni_pim447 {
+//            compatible = "zmk,behavior-pim447";
+//            #binding-cells = <1>;
+//        };
+//    };
 
     combos {
         compatible = "zmk,combos";
