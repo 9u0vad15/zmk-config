@@ -1,12 +1,13 @@
 file_format: '1'
-id: catostyl
-name: Catostyl
+id: velella
+name: Velella
 type: shield
 url: https://github.com/9u0vad15/zmk-config
 requires: [nice_nano_v2]
 features:
     - keys
+    - pointer
 siblings:
-    - catostyl_dongle
-    - catostyl_left
-    - catostyl_right
+    - velella_dongle
+    - velella_left
+    - velella_right

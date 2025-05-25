@@ -1,0 +1,8 @@
+config SHIELD_VELELLA_DONGLE
+    def_bool $(shields_list_contains,velella_dongle)
+
+config SHIELD_VELELLA_LEFT
+    def_bool $(shields_list_contains,velella_left)
+
+config SHIELD_VELELLA_RIGHT
+    def_bool $(shields_list_contains,velella_right)

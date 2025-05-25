@@ -6,5 +6,13 @@ include:
       shield: catostyl_left
     - board: nice_nano_v2
       shield: catostyl_right
-    # - board: nice_nano_v2
-    #   shield: settings_reset
+
+    - board: nice_nano_v2
+      shield: velella_dongle dongle_display
+    - board: nice_nano_v2
+      shield: velella_left
+    - board: nice_nano_v2
+      shield: velella_right
+
+    - board: nice_nano_v2
+      shield: settings_reset
